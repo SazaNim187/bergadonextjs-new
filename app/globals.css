@@ -1,6 +1,6 @@
 /* Tailwind v4 using @import instead of @tailwind */
 @import "tailwindcss/preflight";
-@import "tailwindcss/utilities";
+@tailwind utilities;
 
 /* Custom CSS variables */
 :root {
@@ -18,3 +18,5 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* You can keep all your existing CSS rules here */
