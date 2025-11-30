@@ -1,26 +1,63 @@
-import Image from "next/image";
-import Link from "next/link";
-
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-gray-900">
-      <h1 className="text-5xl font-bold mt-8">Welcome to My Personal Website</h1>
-      <Image
-        src="/profile.jpg"
-        alt="My Photo"
-        width={200}
-        height={200}
-        className="rounded-full mt-6"
-      />
-      <p className="mt-4 text-lg text-center max-w-md">
-        Hi! I’m Nimrod, and this is my personal website.
-      </p>
-      <nav className="flex gap-6 mt-8">
-        <Link href="/about" className="text-blue-600 hover:underline">About</Link>
-        <Link href="/education" className="text-blue-600 hover:underline">Education</Link>
-        <Link href="/hobbies" className="text-blue-600 hover:underline">Hobbies</Link>
-        <Link href="/contact" className="text-blue-600 hover:underline">Contact</Link>
-      </nav>
-    </main>
+    <div className="flex flex-col gap-16">
+
+      {/* Hero Section */}
+      <section className="text-center py-20 px-6 rounded-2xl"
+        style={{ backgroundColor: "#ecdcc3", color: "#4b341c" }}
+      >
+        <h1 className="text-4xl font-bold mb-4">
+          Welcome to My Portfolio
+        </h1>
+        <p className="text-lg max-w-xl mx-auto opacity-80">
+          Explore my background, interests, and academic journey.
+        </p>
+      </section>
+
+      {/* Cards Section */}
+      <section className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        
+        {/* About */}
+        <a href="/about" className="block p-6 rounded-xl shadow-md transition hover:scale-[1.02]"
+          style={{ backgroundColor: "#f0e3d1", color: "#4b341c" }}
+        >
+          <h2 className="text-xl font-semibold mb-2">About Me</h2>
+          <p className="opacity-80">
+            Learn more about who I am and what I do.
+          </p>
+        </a>
+
+        {/* Education */}
+        <a href="/education" className="block p-6 rounded-xl shadow-md transition hover:scale-[1.02]"
+          style={{ backgroundColor: "#f0e3d1", color: "#4b341c" }}
+        >
+          <h2 className="text-xl font-semibold mb-2">Education</h2>
+          <p className="opacity-80">
+            View my academic background and achievements.
+          </p>
+        </a>
+
+        {/* Hobbies */}
+        <a href="/hobbies" className="block p-6 rounded-xl shadow-md transition hover:scale-[1.02]"
+          style={{ backgroundColor: "#f0e3d1", color: "#4b341c" }}
+        >
+          <h2 className="text-xl font-semibold mb-2">Hobbies</h2>
+          <p className="opacity-80">
+            Discover the things I enjoy in my free time.
+          </p>
+        </a>
+
+        {/* Contact */}
+        <a href="/contact" className="block p-6 rounded-xl shadow-md transition hover:scale-[1.02]"
+          style={{ backgroundColor: "#f0e3d1", color: "#4b341c" }}
+        >
+          <h2 className="text-xl font-semibold mb-2">Contact</h2>
+          <p className="opacity-80">
+            Reach out to me for inquiries or collaborations.
+          </p>
+        </a>
+      </section>
+
+    </div>
   );
 }
