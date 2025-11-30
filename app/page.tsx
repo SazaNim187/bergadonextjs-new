@@ -7,9 +7,10 @@ export default function Home() {
         className="text-center py-24 px-8 rounded-2xl"
         style={{ backgroundColor: "#ecdcc3", color: "#4b341c" }}
       >
-        <h1 className="text-5xl font-bold mb-6">
+        <h3 className="text-5xl font-bold mb-10">
           Welcome to My Domain Expansion
-        </h1>
+          Hu Tao Daisuki
+        </h3>
         <p className="text-xl max-w-2xl mx-auto opacity-80 leading-relaxed">
           Explore my background, interests, and academic journey. This website
           highlights my personal story and experiences.

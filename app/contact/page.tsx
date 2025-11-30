@@ -8,7 +8,7 @@ export default function Contact() {
       <p className="text-lg mb-4">Or connect with me on social media:</p>
       <ul className="list-disc pl-6 space-y-2 text-lg">
        
-        <li>GitHub: [SazaNim187]</li>
+        <li>GitHub: SazaNim187</li>
         <li>Facebook: Nimrod Celestial Bergado</li>
         <li>Instagram: Niminimis</li>
         

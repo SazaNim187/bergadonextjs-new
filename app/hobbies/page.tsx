@@ -9,6 +9,7 @@ export default function Hobbies() {
         <li>Watching Anime</li>
         <li>Digital Art</li>
         <li>Playing Melee Tools</li>
+        <li>Simping for <b>Hu Tao</b></li>
       </ul>
       <Link href="/" className="text-blue-600 hover:underline mt-6 block">Back to Home</Link>
     </main>
