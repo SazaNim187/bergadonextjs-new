@@ -8,7 +8,7 @@ export default function Home() {
         style={{ backgroundColor: "#ecdcc3", color: "#4b341c" }}
       >
         <h1 className="text-5xl font-bold mb-6">
-          Welcome to My Portfolio
+          Welcome to My Domain Expansion
         </h1>
         <p className="text-xl max-w-2xl mx-auto opacity-80 leading-relaxed">
           Explore my background, interests, and academic journey. This website
@@ -47,7 +47,7 @@ export default function Home() {
         >
           <h2 className="text-2xl font-semibold mb-3">Education</h2>
           <p className="opacity-80 leading-relaxed">
-            View my academic journey, school background, and achievements.
+            View my academic journey and school background.
           </p>
         </a>
 
