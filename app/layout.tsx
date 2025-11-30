@@ -25,9 +25,26 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-amber-50 text-amber-900 min-h-screen`}
       >
-        {children}
+        {/* Header */}
+        <header className="p-4 bg-amber-100 shadow-md">
+          <nav className="flex justify-center gap-8">
+            <a href="/" className="hover:text-amber-700">Home</a>
+            <a href="/about" className="hover:text-amber-700">About</a>
+            <a href="/contact" className="hover:text-amber-700">Contact</a>
+            <a href="/education" className="hover:text-amber-700">Education</a>
+            <a href="/hobbies" className="hover:text-amber-700">Hobbies</a>
+          </nav>
+        </header>
+
+        {/* Page content */}
+        <main className="p-8 max-w-4xl mx-auto">{children}</main>
+
+        {/* Footer */}
+        <footer className="text-center p-4 text-amber-800">
+          &copy; {new Date().getFullYear()} My Website
+        </footer>
       </body>
     </html>
   );
