@@ -19,31 +19,46 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-amber-50 text-amber-900 min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen`}
+        style={{
+          backgroundColor: "#f5e8c7", // light brown
+          color: "#5a3e1b", // dark brown
+        }}
       >
         {/* Header */}
-        <header className="p-4 bg-amber-100 shadow-md">
+        <header
+          style={{
+            backgroundColor: "#e8d3b5",
+            padding: "1rem",
+            boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
+          }}
+        >
           <nav className="flex justify-center gap-8">
-            <a href="/" className="hover:text-amber-700">Home</a>
-            <a href="/about" className="hover:text-amber-700">About</a>
-            <a href="/contact" className="hover:text-amber-700">Contact</a>
-            <a href="/education" className="hover:text-amber-700">Education</a>
-            <a href="/hobbies" className="hover:text-amber-700">Hobbies</a>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/education">Education</a>
+            <a href="/hobbies">Hobbies</a>
           </nav>
         </header>
 
-        {/* Page content */}
         <main className="p-8 max-w-4xl mx-auto">{children}</main>
 
-        {/* Footer */}
-        <footer className="text-center p-4 text-amber-800">
-          &copy; {new Date().getFullYear()} My Website
+        <footer
+          style={{
+            textAlign: "center",
+            padding: "1rem",
+            marginTop: "2rem",
+            color: "#4a341a",
+          }}
+        >
+          © {new Date().getFullYear()} My Website
         </footer>
       </body>
     </html>
