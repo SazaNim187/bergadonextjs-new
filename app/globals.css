@@ -4,10 +4,10 @@
 
 /* Custom CSS variables */
 :root {
-  --background: #ffffff;
+  --background: #a7916a;
   --foreground: #171717;
   --sidebar-ring: #facc15; /* example yellow */
-  --sidebar-border: #e5e7eb;
+  --sidebar-border: #8a7348;
 }
 
 /* Optional global styles */
